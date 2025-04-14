@@ -20,7 +20,7 @@
     <nav>
         <div class="nav-container">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-                <span>林詩偉</span>
+                <span>SHIWEI</span>
             </div>
             <div class="links">
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
@@ -30,7 +30,7 @@
                     <a href="#">基本資料</a>
                 </div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <a href="#">學經歷</a>
+                    <a href="#">學習經歷</a>
                 </div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                     <a href="#">技能</a>
@@ -68,17 +68,21 @@
                     <span></span>
                 </div>
                 <div class="introduce" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
-                    <p>你們可以叫我林偉偉。我的個性溫和且友善，做事總是保有積極的態度、並樂於團隊合作。
-                        我具備基本的文書處理能力與程式設計基礎，大學期間專注於深度學習與影像辨識領域，並曾參與論文發表。
-                        這段研究經驗培養了我嚴謹的邏輯思維與解決問題的能力。
-                        在學習過程中，我對前端開發產生濃厚興趣，目前正積極學習 HTML、CSS、JS及 Vue3框架，並持續累積實作經驗。
-                        此外我正在尋找前端相關的工作機會，期望在實務中持續精進，成為一位具備獨立開發能力、也擅長團隊合作的前端工程師。
-                    </p>
+                    <p>你們可以叫我林偉偉。</p>
+                    <div class="br"></div>
+                    <p>我的個性溫和且友善，做事總是保有積極的態度、並樂於團隊合作。</p>
+                    <div class="br"></div>
+                    <p>我具備基本的文書處理能力與程式設計基礎，大學期間專注於深度學習與影像辨識領域，並參與論文發表。
+                        這段研究經驗培養了我的邏輯思考與解決問題的能力。</p>
+                    <div class="br"></div>
+                    <p> 在學習過程中，我對前端開發產生濃厚興趣，目前正積極學習 HTML、CSS、JS及 Vue3框架，並持續累積實作經驗。
+                        此外我正在尋找前端相關的工作機會，期望在實務中持續精進，成為一位具備獨立開發能力、也擅長團隊合作的前端工程師。</p>
                 </div>
                 <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1100">
                     <a href="https://github.com/ShiweiLin25"><i class="fa-brands fa-github"></i></a>
                     <a href="https://line.me/ti/p/TI_NiRexsA"><i class="fa-brands fa-line"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100006480221938"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100006480221938"><i
+                            class="fa-brands fa-facebook"></i></a>
                     <a href="https://discordapp.com/users/742749165003604119"><i class="fa-brands fa-discord"></i></a>
                 </div>
                 <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1200">
@@ -89,7 +93,10 @@
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init((offset = 0));
+        AOS.init({
+            offset: 0,
+            once: true // 滾動進來一次就顯示動畫，避免動畫沒觸發就不見
+        });
     </script>
     <script>
         function hamburger() {
