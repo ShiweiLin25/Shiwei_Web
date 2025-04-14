@@ -209,18 +209,23 @@ section {
 @keyframes words {
 
     0%,
-    33% {
-        content: "Developer";
+    25% {
+        content: "逢甲大學";
     }
 
-    34%,
-    66% {
-        content: "Designer";
+    26%,
+    50% {
+        content: "資訊工程學系";
     }
 
-    67%,
+    51%,
+    75% {
+        content: "逢甲大學";
+    }
+
+    76%,
     100% {
-        content: "Youtuber";
+        content: "資訊工程學系";
     }
 }
 .content .introduce {
@@ -317,7 +322,7 @@ section {
     }
 
     .main-container .image {
-        width: 80%;
+        width: 50%;
         margin-bottom: 0px;
     }
 }
