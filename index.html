@@ -24,34 +24,34 @@
             </div>
             <div class="links">
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <a href="#">首頁</a>
+                    <a href="#" data-target="home">首頁</a>
                 </div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <a href="#">基本資料</a>
+                    <a href="#" data-target="profile">基本資料</a>
                 </div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <a href="#">學習經歷</a>
+                    <a href="#" data-target="education">學習經歷</a>
                 </div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                    <a href="#">技能</a>
+                    <a href="#" data-target="skills">技能</a>
                 </div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                    <a href="#">作品</a>
+                    <a href="#" data-target="works">作品</a>
                 </div>
                 <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                    <a href="#">聯絡我</a>
+                    <a href="#" data-target="contact">聯絡我</a>
                 </div>
             </div>
             <i class="fa-solid fa-bars hamburger" onclick="hamburger()"></i>
         </div>
         <div class="dropdown">
             <div class="links">
-                <a href="#">首頁</a>
-                <a href="#">基本資料</a>
-                <a href="#">學習經歷</a>
-                <a href="#">技能</a>
-                <a href="#">作品</a>
-                <a href="#">聯絡我</a>
+                <a href="#" data-target="home">首頁</a>
+                <a href="#" data-target="profile">基本資料</a>
+                <a href="#" data-target="education">學習經歷</a>
+                <a href="#" data-target="skills">技能</a>
+                <a href="#" data-target="works">作品</a>
+                <a href="#" data-target="contact">聯絡我</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
@@ -61,16 +61,14 @@
             <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
                 <img src="調色.jpg" alt="">
             </div>
-            <div class="content">
+            <div class="content" id="content-change-block">
                 <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">哈囉~ 我叫 <span>林詩偉</span>
                 </h1>
                 <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">畢業於
                     <span></span>
                 </div>
                 <div class="introduce" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
-                    <p>你們可以叫我林偉偉。</p>
-                    <div class="br"></div>
-                    <p>我的個性溫和且友善，做事總是保有積極的態度、並樂於團隊合作。</p>
+                    <p>今年23歲，你們可以叫我林偉偉。</p>
                     <div class="br"></div>
                     <p>我具備基本的文書處理能力與程式設計基礎，大學期間專注於深度學習與影像辨識領域，並參與論文發表。
                         這段研究經驗培養了我的邏輯思考與解決問題的能力。</p>
@@ -107,6 +105,130 @@
             const navbar = document.querySelector(".dropdown");
             navbar.style.transform = "translateY(-500px)";
         }
+    </script>
+    <script>
+        const contentElement = document.getElementById('content-change-block');
+
+        const contentMap = {
+            home: `
+                <h1 data-aos="fade-left" data-aos-duration="1000">哈囉~ 我叫 <span>林詩偉</span></h1>
+                <div class="typewriter"  data-aos="fade-right" data-aos-duration="1000" >畢業於 <span></span></div>
+                <div class="introduce" data-aos="flip-up" data-aos-duration="1000">
+                    <p>今年23歲，你們可以叫我林偉偉。</p>
+                    <div class="br"></div>
+                    <p>我的個性溫和且友善，做事總是保有積極的態度、並樂於團隊合作。</p>
+                    <div class="br"></div>
+                    <p>我具備基本的文書處理能力與程式設計基礎，大學期間專注於深度學習與影像辨識領域，並參與論文發表。
+                    這段研究經驗培養了我的邏輯思考與解決問題的能力。</p>
+                    <div class="br"></div>
+                    <p>我對前端開發產生濃厚興趣，目前正積極學習 HTML、CSS、JS及 Vue3框架，期望成為一位獨立開發也擅長合作的前端工程師。</p>
+                </div>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000">
+                    <a href="https://github.com/ShiweiLin25"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://line.me/ti/p/TI_NiRexsA"><i class="fa-brands fa-line"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100006480221938"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://discordapp.com/users/742749165003604119"><i class="fa-brands fa-discord"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000">
+                    <button>下載履歷</button>
+                </div>
+            `,
+            profile: `
+                <h1  class="profile-title" data-aos="fade-left" data-aos-duration="1000">基本資料</h1>
+                <div class="profile" data-aos="fade-right" data-aos-duration="1000">
+                    <p><strong>姓名：</strong>林詩偉</p>
+                    <p><strong>英文姓名：</strong>SHIWEI-LIN</p>
+                    <p><strong>年齡：</strong>23歲</p>
+                    <p><strong>出生日期：</strong>2002/02/05</p>
+                    <p><strong>居住地：</strong>嘉義市</p>
+                    <p><strong>電話：</strong>0905129385</p>
+                    <p><strong>Email：</strong>a0905129385@gmail.com</p>
+                    <p><strong>駕照：</strong>普通小型車、普通重型機車</p>
+                </div>
+                `,
+            education: `
+                <div class="accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" data-aos="flip-up" data-aos-duration="1000">教育經歷</h2>
+                    <div class="accordion-content">
+                    <ul>
+                        <li><strong>國小：</strong>嘉義市興嘉國民小學｜2008年9月 – 2014年6月</li>
+                        <li><strong>國中：</strong>嘉義市民生國民中學｜2014年9月 – 2017年6月</li>
+                        <li><strong>高中：</strong>國立華南高級商業職業學校｜2017年9月 – 2020年6月</li>
+                        <li><strong>大學：</strong>逢甲大學 資訊工程學系｜2020年9月 – 2024年6月</li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" data-aos="flip-up" data-aos-duration="1000">工讀經歷</h2>
+                    <div class="accordion-content">
+                    <ul>
+                        <li><strong>資料結構助理教師：</strong>逢甲大學 資訊電機學院 ｜2023年9月 – 2024年2月</li>
+                        <li><strong>櫃檯工讀生：</strong>逢甲大學 教學科技中心｜2022年9月 – 2024年6月</li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" data-aos="flip-up" data-aos-duration="1000">比賽經歷</h2>
+                    <div class="accordion-content">
+                    <ul>
+                        <li><strong>App創意程式競賽：</strong>來砍三眼怪｜入圍佳作｜2020年12月</li>
+                        <li><strong>TSE論文發表：</strong>深度學習之犬隻性格辨識｜全英論文發表｜2023年7月</li>
+                        <li><strong>畢業專題：</strong>狗狗面相學｜網站開發｜2023年12月</li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+                `,
+            skills: `< h1 > 技能</> <ul><li>HTML/CSS</li><li>JavaScript</li><li>Vue3</li></ul>`,
+            works: `< h1 > 作品集</ > <p>這裡會展示我的前端作品...</p>`,
+            contact: `< h1 > 聯絡我</ > <p>Email: example@mail.com<br>LINE: @shiwei</p>`
+        };
+
+        document.querySelectorAll('.links a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = this.dataset.target;
+
+                if (contentMap[target]) {
+                    contentElement.innerHTML = contentMap[target];
+                }
+            });
+        });
+    </script>
+    <script>
+        function bindAccordionEvents() {
+            document.querySelectorAll(".accordion-header").forEach(header => {
+                header.addEventListener("click", () => {
+                    document.querySelectorAll(".accordion-item").forEach(item => {
+                        if (item !== header.parentElement) {
+                            item.classList.remove("active");
+                        }
+                    });
+                    header.parentElement.classList.toggle("active");
+                });
+            });
+        }
+
+        // 每次點擊選單時更新內容並重新綁定事件
+        document.querySelectorAll('.links a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = this.dataset.target;
+
+                if (contentMap[target]) {
+                    contentElement.innerHTML = contentMap[target];
+                    bindAccordionEvents(); // 👈 加這行
+                }
+            });
+        });
+
+        // 頁面載入時也跑一次（如果預設就載入 education 的話）
+        bindAccordionEvents();
+
     </script>
 </body>
 

@@ -78,7 +78,7 @@ nav {
 }
 
 .nav-container .links .contact-btn a:hover::before {
-    width:0%;
+    width: 0%;
 }
 
 .nav-container .links a:hover::before {
@@ -93,10 +93,10 @@ nav {
     transition: 0.3s linear;
 }
 
-.nav-container .contact-btn:hover
-{
+.nav-container .contact-btn:hover {
     background-color: rgb(109, 67, 0);
 }
+
 .nav-container .contact-btn:hover a {
     color: white;
 }
@@ -106,7 +106,7 @@ nav {
 }
 
 .nav-container .links .contact-btn a:hover {
-    color:  white;
+    color: white;
 }
 
 .dropdown {
@@ -228,13 +228,16 @@ section {
         content: "資訊工程學系";
     }
 }
+
 .content .introduce {
     margin: 20px 0px;
 }
-.content .introduce p{
+
+.content .introduce p {
     font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
 }
-.content .introduce .br{
+
+.content .introduce .br {
     height: 8px;
 }
 
@@ -284,6 +287,78 @@ section {
     box-shadow: 0 0 10px rgb(109, 67, 0);
 }
 
+.profile {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.profile-title {
+    color: #333;
+}
+
+.profile p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.profile strong {
+    color: rgb(109, 67, 0);
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .accordion-header {
+    color: #333;
+    font-weight: 600;
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(109, 67, 0, 0.1);
+    border-left: 5px solid rgb(109, 67, 0);
+    transition: 0.2s linear;
+  }
+  
+  .accordion-header:hover {
+    transform: scale(1.02);
+    background: linear-gradient(135deg, #a85b00, #6d4300);
+    border-left: 0px;
+    color: white;
+  }
+  
+  .accordion-content {
+    background-color: rgba(255, 249, 229, 0.7);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s;
+    padding: 0 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    box-shadow: inset 0 1px 4px rgba(109, 67, 0, 0.08);
+  }
+  
+  .accordion-content ul {
+    padding: 1rem 0;
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .accordion-item.active .accordion-content {
+    max-height: 500px;
+    padding-top: 1rem;
+  }
+  
 @media (max-width:884px) {
     body {
         overflow-y: visible;
@@ -301,17 +376,21 @@ section {
         display: flex;
         flex-direction: column;
     }
-    .main-container .content h1{
+
+    .main-container .content h1 {
         font-size: 2rem;
         text-align: center;
     }
-    .main-container .content .typewriter{
+
+    .main-container .content .typewriter {
         font-size: 2rem;
         text-align: center;
     }
-    .main-container .content .typewriter span{
+
+    .main-container .content .typewriter span {
         font-size: 2rem;
     }
+
     .nav-container .links {
         display: none;
     }
@@ -324,9 +403,11 @@ section {
     .main-container .content {
         width: 80%;
     }
+
     .social-links {
         text-align: center;
     }
+
     .social-links i {
         width: 2.5rem;
         height: 2.5rem;
@@ -334,7 +415,8 @@ section {
         margin-right: 0px;
         margin: 10px;
     }
-    .content .btn{
+
+    .content .btn {
         text-align: center;
     }
 
