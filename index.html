@@ -106,6 +106,7 @@
             navbar.style.transform = "translateY(-500px)";
         }
     </script>
+
     <script>
         const contentElement = document.getElementById('content-change-block');
 
@@ -148,6 +149,7 @@
                 </div>
                 `,
             education: `
+                <h1  class="accordion-title" data-aos="fade-left" data-aos-duration="1000">經歷</h1>
                 <div class="accordion">
                 <div class="accordion-item">
                     <h2 class="accordion-header" data-aos="flip-up" data-aos-duration="1000">教育經歷</h2>
@@ -155,8 +157,8 @@
                     <ul>
                         <li><strong>國小：</strong>嘉義市興嘉國民小學｜2008年9月 – 2014年6月</li>
                         <li><strong>國中：</strong>嘉義市民生國民中學｜2014年9月 – 2017年6月</li>
-                        <li><strong>高中：</strong>國立華南高級商業職業學校｜2017年9月 – 2020年6月</li>
-                        <li><strong>大學：</strong>逢甲大學 資訊工程學系｜2020年9月 – 2024年6月</li>
+                        <li><strong>高中：</strong>國立華南高商｜普通科｜2017年9月 – 2020年6月</li>
+                        <li><strong>大學：</strong>逢甲大學｜資訊工程學系｜2020年9月 – 2024年6月</li>
                     </ul>
                     </div>
                 </div>
@@ -165,8 +167,8 @@
                     <h2 class="accordion-header" data-aos="flip-up" data-aos-duration="1000">工讀經歷</h2>
                     <div class="accordion-content">
                     <ul>
-                        <li><strong>資料結構助理教師：</strong>逢甲大學 資訊電機學院 ｜2023年9月 – 2024年2月</li>
-                        <li><strong>櫃檯工讀生：</strong>逢甲大學 教學科技中心｜2022年9月 – 2024年6月</li>
+                        <li><strong>資料結構助理教師：</strong>逢甲大學｜資訊電機學院 ｜2023年9月 – 2024年2月</li>
+                        <li><strong>櫃檯工讀生：</strong>逢甲大學｜教學科技中心｜2022年9月 – 2024年6月</li>
                     </ul>
                     </div>
                 </div>
@@ -177,15 +179,118 @@
                     <ul>
                         <li><strong>App創意程式競賽：</strong>來砍三眼怪｜入圍佳作｜2020年12月</li>
                         <li><strong>TSE論文發表：</strong>深度學習之犬隻性格辨識｜全英論文發表｜2023年7月</li>
-                        <li><strong>畢業專題：</strong>狗狗面相學｜網站開發｜2023年12月</li>
+                        <li><strong>畢業專題：</strong>狗狗面相學｜犬隻性格辨識網站｜2023年12月</li>
                     </ul>
                     </div>
                 </div>
                 </div>
                 `,
-            skills: `< h1 > 技能</> <ul><li>HTML/CSS</li><li>JavaScript</li><li>Vue3</li></ul>`,
-            works: `< h1 > 作品集</ > <p>這裡會展示我的前端作品...</p>`,
-            contact: `< h1 > 聯絡我</ > <p>Email: example@mail.com<br>LINE: @shiwei</p>`
+            skills: `
+                <h1 class="skills-title" data-aos="fade-left" data-aos-duration="1000">技能</h1>
+                <div class="skills-container">
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-duration="1000">
+                        <h2>前端技術</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Vue3</li>
+                            <li>Bootstrap</li>
+                            <li>Tailwind</li>
+                            <li>JQuery</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <h2>開發工具 & 文書處理</h2>
+                        <ul>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>VS Code</li>
+                            <li>Word</li>
+                            <li>Excel</li>
+                            <li>PowerPoint</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <h2>程式語言 & 資料庫</h2>
+                        <ul>
+                            <li>Python</li>
+                            <li>C</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <h2>深度學習 / AI</h2>
+                        <ul>
+                            <li>YOLOv7</li>
+                            <li>Keras</li>
+                            <li>TensorFlow</li>
+                        </ul>
+                    </div>
+
+                </div>
+                `,
+            works: `
+                <h1 class="works-title" data-aos="fade-left" data-aos-duration="1000">作品集</h1>
+                <section class="works-section" id="works">
+                <div class="works-container">
+                    <!-- 作品 1 -->
+                    <div class="work-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="your-image.jpg" alt="作品封面" class="work-image" />
+                    <h3 class="work-title">畢業專題網站</h3>
+                    <p class="work-desc">使用 Vue3 + Tailwind 打造的 RWD 響應式網站。</p>
+                    <a href="https://your-project-link.com" target="_blank" class="work-link">查看作品</a>
+                    </div>
+
+                    <!-- 作品 2 -->
+                    <div class="work-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="your-image.jpg" alt="作品封面" class="work-image" />
+                    <h3 class="work-title">App Inventor 專案</h3>
+                    <p class="work-desc">榮獲佳作，專注於...（可補充）。</p>
+                    <a href="https://your-project-link.com" target="_blank" class="work-link">查看作品</a>
+                    </div>
+
+                    <!-- 作品 3 -->
+                    <div class="work-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="your-image.jpg" alt="作品封面" class="work-image" />
+                    <h3 class="work-title">YOLOv7 AI 辨識</h3>
+                    <p class="work-desc">以 YOLOv7 進行 AI 影像辨識的專題。</p>
+                    <a href="https://your-project-link.com" target="_blank" class="work-link">查看作品</a>
+                    </div>
+
+                    <!-- 作品 4 -->
+                    <div class="work-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="your-image.jpg" alt="作品封面" class="work-image" />
+                    <h3 class="work-title">個人網頁練習</h3>
+                    <p class="work-desc">練習 RWD、動畫與 JS 效果的作品。</p>
+                    <a href="https://your-project-link.com" target="_blank" class="work-link">查看作品</a>
+                    </div>
+                </div>
+                </section>
+                `,
+            contact: `
+                <h1 class="contact-title" data-aos="fade-left" data-aos-duration="1000">聯絡我</h1>
+                <form id="contact-form" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="user_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">電子信箱</label>
+                        <input type="email" id="email" name="user_email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">訊息內容</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">送出</button>
+                    <p id="form-status"></p>
+                </form>
+                `
         };
 
         document.querySelectorAll('.links a').forEach(link => {
@@ -198,6 +303,28 @@
                 }
             });
         });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        window.onload = function () {
+            (function () {
+                emailjs.init("MIcXt4MkaTbhBtVf8");
+            })();
+
+            document.getElementById('contact-form').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                emailjs.sendForm('service_bvuscbx', 'template_2r4qdy9', this)
+                    .then(function () {
+                        document.getElementById('form-status').innerText = "寄出成功！";
+                    }, function (error) {
+                        document.getElementById('form-status').innerText = "發送失敗：" + error.text;
+                    });
+
+                this.reset();
+            });
+        };
+
     </script>
     <script>
         function bindAccordionEvents() {
@@ -223,6 +350,7 @@
                     contentElement.innerHTML = contentMap[target];
                     bindAccordionEvents(); // 👈 加這行
                 }
+                cancel();
             });
         });
 
@@ -230,6 +358,8 @@
         bindAccordionEvents();
 
     </script>
+
+
 </body>
 
 </html>
