@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入字體圖標與樣式 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- 自訂 CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- 引入 Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <!-- 引入 AOS 動畫庫 -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Shiwei's web</title>
 </head>
@@ -22,6 +25,7 @@
             <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
                 <span>SHIWEI</span>
             </div>
+            <!-- 導覽列連結，點擊後會對應切換內容區塊 -->
             <div class="links">
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                     <a href="#" data-target="home">首頁</a>
@@ -44,6 +48,7 @@
             </div>
             <i class="fa-solid fa-bars hamburger" onclick="hamburger()"></i>
         </div>
+        <!-- 手機版選單項目 -->
         <div class="dropdown">
             <div class="links">
                 <a href="#" data-target="home">首頁</a>
@@ -61,6 +66,7 @@
         <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
             <img src="image/Me.jpg" alt="">
         </div>
+        <!-- 動態內容區塊，點擊導覽列連結時，內容會切換 -->
         <div class="content" id="content-change-block">
             <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">哈囉~ 我叫 <span>林詩偉</span>
             </h1>
@@ -83,9 +89,6 @@
                         class="fa-brands fa-facebook"></i></a>
                 <a href="https://discordapp.com/users/742749165003604119"><i class="fa-brands fa-discord"></i></a>
             </div>
-            <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1200">
-                <button>下載履歷</button>
-            </div>
         </div>
     </div>
 
@@ -93,9 +96,11 @@
     <script>
         AOS.init({
             offset: 0,
-            once: true // 滾動進來一次就顯示動畫，避免動畫沒觸發就不見
+            once: true // 滾動進來一次就顯示動畫
         });
     </script>
+
+    <!-- 漢堡選單開關功能 -->
     <script>
         function hamburger() {
             const navbar = document.querySelector(".dropdown");
@@ -107,6 +112,7 @@
         }
     </script>
 
+    <!-- 點選導覽項目切換 .content 內容 -->
     <script>
         const contentElement = document.getElementById('content-change-block');
 
@@ -130,9 +136,6 @@
                     <a href="https://www.facebook.com/profile.php?id=100006480221938"><i
                             class="fa-brands fa-facebook"></i></a>
                     <a href="https://discordapp.com/users/742749165003604119"><i class="fa-brands fa-discord"></i></a>
-                </div>
-                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000">
-                    <button>下載履歷</button>
                 </div>
             `,
             profile: `
@@ -293,7 +296,7 @@
         });
     </script>
 
-    <!-- EmailJS -->
+    <!-- EmailJS 寄信功能 -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
@@ -316,6 +319,7 @@
         });
     </script>
 
+    <!-- 經歷切換（教育、工讀、比賽區塊） -->
     <script>
         function bindAccordionEvents() {
             document.querySelectorAll(".accordion-header").forEach(header => {
